@@ -1,104 +1,95 @@
 .header {
-    height: 38vw;
-    margin: 20px auto;
-    border-radius: 10px;
-    overflow: hidden;
-    position: relative;
+  height: 38vw;
+  margin: 20px auto;
+  border-radius: 10px;
+  /* background: url('/src/assets/header_img.jpg') no-repeat center center/cover; */
+  animation: diapo 6s infinite;
+  position: relative;
+  overflow: hidden;
+}
+
+@keyframes diapo {
+  0%,
+  15% {
+    background: url("/src/assets/header_img.jpg") no-repeat center center/cover;
   }
-  
-  /* Track moving */
-  .carousel-track {
-    display: flex;
-    width: calc(200%); /* twice the images for looping */
-    animation: slide 12s steps(12) infinite;
+  16%,
+  31% {
+    background: url("/src/assets/header_img2.jpg") no-repeat center center/cover;
   }
-  
-  /* Image style */
-  .carousel-track img {
-    width: calc(100% );
-    object-fit: cover;
-    flex-shrink: 0;
-    height: 38vw;
-    border-radius: 10px;
+  32%,
+  47% {
+    background: url("/src/assets/header_img3.jpg") no-repeat center center/cover;
   }
-  
-  /* Animation */
-  @keyframes slide {
-    0% {
-      transform: translateX(0%);
-    }
-    100% {
-      transform: translateX(-100%);
-    }
+  48%,
+  63% {
+    background: url("/src/assets/header_img4.jpg") no-repeat center center/cover;
   }
-  
-  /* Header contents */
+  64%,
+  79% {
+    background: url("/src/assets/header_img5.jpg") no-repeat center center/cover;
+  }
+  80%,
+  95% {
+    background: url("/src/assets/header_img6.jpg") no-repeat center center/cover;
+  }
+  100% {
+    background: url("/src/assets/header_img.jpg") no-repeat center center/cover;
+  }
+}
+.header-contents {
+  border-radius: 10px;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 1.5vw;
+  max-width: 50%;
+  bottom: 10%;
+  left: 4vw;
+  animation: fadein 3s;
+}
+
+.header-contents h2 {
+  font-weight: 500;
+  color: rgb(255, 255, 255);
+  font-size: max(4.5vw, 22px);
+}
+
+.header-contents p {
+  color: white;
+  font-size: 1.1vw;
+}
+
+.header-contents button {
+  border: none;
+  color: #747474;
+  font-weight: 500;
+  padding: 1vw 2.3vw;
+  background-color: white;
+  font-size: max(1vw, 13px);
+  border-radius: 50px;
+  transition: 0.5s;
+  cursor: pointer;
+}
+.header-contents button:hover {
+  background-color: tomato;
+  color: white;
+}
+
+@media (max-width: 1050px) {
   .header-contents {
-    border-radius: 10px;
-    position: absolute;
-    display: flex;
-    flex-direction: column;
-    align-items: start;
-    gap: 1.5vw;
-    max-width: 50%;
-    bottom: 10%;
-    left: 4vw;
-    animation: fadein 3s;
+    max-width: 45%;
   }
-  
-  .header-contents h2 {
-    font-weight: 500;
-    color: rgb(255, 255, 255);
-    font-size: max(4.5vw, 22px);
+}
+@media (max-width: 750px) {
+  .header-contents {
+    max-width: 65%;
   }
-  
   .header-contents p {
-    color: white;
-    font-size: 1.1vw;
+    display: none;
   }
-  
   .header-contents button {
-    border: none;
-    color: #747474;
-    font-weight: 500;
-    padding: 1vw 2.3vw;
-    background-color: white;
-    font-size: max(1vw, 13px);
-    border-radius: 50px;
-    transition: 0.5s;
-    cursor: pointer;
+    padding: 2vw 4vw;
   }
-  
-  .header-contents button:hover {
-    background-color: tomato;
-    color: white;
-  }
-  
-  /* Responsive */
-  @media (max-width: 1050px) {
-    .header-contents {
-      max-width: 45%;
-    }
-  }
-  @media (max-width: 750px) {
-    .header-contents {
-      max-width: 65%;
-    }
-    .header-contents p {
-      display: none;
-    }
-    .header-contents button {
-      padding: 2vw 4vw;
-    }
-  }
-  
-  /* Fade in animation */
-  @keyframes fadein {
-    from {
-      opacity: 0;
-    }
-    to {
-      opacity: 1;
-    }
-  }
-  
+}
