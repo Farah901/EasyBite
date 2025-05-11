@@ -1,18 +1,27 @@
-import './AllItems.css';
-import React, { useContext } from 'react';
+import "./AllItems.css";
+import React, { useContext } from "react";
 
-import { StoreContext } from '../../Context/StoreContext';
-import FoodItem from '../../components/FoodItem/FoodItem';
-import '../../components/FoodItem/FoodItem.css';
-import { Link } from 'react-router-dom';
-import { useRef } from 'react';
+import { StoreContext } from "../../Context/StoreContext";
+import FoodItem from "../../components/FoodItem/FoodItem.jsx";
+import { Link } from "react-router-dom";
+import { useRef } from "react";
 
 function AllItems() {
-  const { food_list } = useContext(StoreContext);
+    const { food_list } = useContext(StoreContext);
     const allItemsRef = useRef(null);
     const isLoading = food_list.length === 0;
-    
-    
+
+    const scrollToTop = () => {
+        if (allItemsRef.current) {
+            allItemsRef.current.scrollIntoView({ behavior: "smooth" });
+        }
+    };
+
+    const scrollToBottom = () => {
+        if (allItemsRef.current) {
+            allItemsRef.current.scrollIntoView({ behavior: "smooth", block: "end" });
+        }
+    };
 
     if (isLoading) {
         return <div className="loading">Loading...</div>;
@@ -33,8 +42,19 @@ function AllItems() {
                         />
                     ))}
                 </div>
-                <Link to='/'>
-                    <button className="back-to-home">Back to Home</button>
+
+                <button className="scroll-to-top" onClick={scrollToTop}>
+                    <i className="fa-solid fa-arrow-up"></i>
+                </button>
+
+                <button className="scroll-to-bottom" onClick={scrollToBottom}>
+                    <i className="fa-solid fa-arrow-down"></i>
+                </button>
+
+                <Link to="/">
+                    <button className="back-to-home">
+                        <i className="fa-solid fa-house"></i>
+                    </button>
                 </Link>
             </div>
         </>

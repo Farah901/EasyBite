@@ -1,9 +1,51 @@
 
-.all-itens-list{
+.all-items-list{
     overflow-y: scroll;
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(216px, 1fr));
     margin-top: 30px;
     gap: 30px;
     row-gap: 50px;
+}
+
+.scroll-to-top{
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    background-color: #f1f1f1;
+    border: none;
+    border-radius: 50%;
+    padding: 10px;
+    cursor: pointer;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    transition: background-color 0.3s;
+}
+
+.loading{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    background-color: #f9f9f9;
+    text-align: center;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin: 20px;
+    border: 1px solid #ddd;
+}
+.scroll-to-bottom{
+    position: fixed;
+    bottom: 30px;
+    left: 30px;
+    background-color: #f1f1f1;
+    border: none;
+    border-radius: 50%;
+    padding: 10px;
+    cursor: pointer;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    transition: background-color 0.3s;
 }
