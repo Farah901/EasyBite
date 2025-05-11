@@ -3,7 +3,7 @@
   margin: 20px auto;
   border-radius: 10px;
   /* background: url('/src/assets/header_img.jpg') no-repeat center center/cover; */
-  animation: diapo 6s infinite;
+  animation: diapo 8s infinite;
   position: relative;
   overflow: hidden;
 }

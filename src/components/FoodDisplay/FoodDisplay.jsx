@@ -2,6 +2,7 @@ import React, { useContext } from "react";
 import "./FoodDisplay.css";
 import { StoreContext } from "../../Context/StoreContext";
 import FoodItem from "../FoodItem/FoodItem";
+import { Link } from "react-router-dom";
 
 function FoodDisplay({ category }) {
   const { food_list } = useContext(StoreContext);
@@ -24,7 +25,7 @@ function FoodDisplay({ category }) {
             );
           }
         })}
-      </div>
+      </div><Link to='/all-items'><button className="all-items">See More</button></Link>
     </div>
   );
 }
