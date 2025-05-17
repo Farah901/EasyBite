@@ -1,11 +1,14 @@
-.login-popup{
-    position: absolute;
+.login-popup {
+    position: fixed;
     z-index: 1;
     width: 100%;
     height: 100%;
     background-color: #00000090;
     display: grid;
+    overflow: hidden;
+    scroll-behavior: fixed;
 }
+
 
 .login-popup-container{
     place-self: center;
