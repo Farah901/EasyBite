@@ -98,7 +98,7 @@ export const food_list = [
     // Moroccan Foods
     {
         _id: "1",
-        name: "Chicken Tagine",
+        name: "Tagine",
         image: food_5,
         price: 18,
         description: "Traditional Moroccan stew with chicken, olives, and preserved lemons.",
@@ -114,7 +114,7 @@ export const food_list = [
     },
     {
         _id: "3",
-        name: "Chicken Pastilla",
+        name: "Pastilla",
         image: food_7,
         price: 20,
         description: "Crispy pastry filled with chicken, almonds, and cinnamon.",
@@ -122,7 +122,7 @@ export const food_list = [
     },
     {
         _id: "4",
-        name: "Harira Soup",
+        name: "Harira",
         image: food_8,
         price: 14,
         description: "Traditional Moroccan tomato-based soup with lentils and chickpeas.",
@@ -140,7 +140,7 @@ export const food_list = [
     },
     {
         _id: "6",
-        name: "Spinach Wraps with Hummus",
+        name: "Spinach Wraps",
         image: food_10,
         price: 10,
         description: "Fresh spinach wraps stuffed with hummus and veggies.",
@@ -148,7 +148,7 @@ export const food_list = [
     },
     {
         _id: "7",
-        name: "Broccoli and Mushroom Stir-Fry",
+        name: "Broccoli StirFry",
         image: food_11,
         price: 9,
         description: "Stir-fried broccoli and mushrooms in a savory sauce.",
@@ -156,7 +156,7 @@ export const food_list = [
     },
     {
         _id: "8",
-        name: "Vegetarian Green Curry",
+        name: "Green Curry",
         image: food_12,
         price: 8,
         description: "Thai green curry with assorted vegetables and coconut milk.",
@@ -166,7 +166,7 @@ export const food_list = [
     // Mexican Foods
     {
         _id: "9",
-        name: "Tacos Al Pastor",
+        name: "Al Pastor",
         image: food_13,
         price: 12,
         description: "Mexican tacos with marinated pork, pineapple, and cilantro.",
@@ -174,7 +174,7 @@ export const food_list = [
     },
     {
         _id: "10",
-        name: "Beef Burrito",
+        name: "Burrito",
         image: food_14,
         price: 14,
         description: "Tortilla filled with seasoned beef, rice, and beans.",
@@ -182,7 +182,7 @@ export const food_list = [
     },
     {
         _id: "11",
-        name: "Ground Beef Enchiladas",
+        name: "Enchiladas",
         image: food_15,
         price: 13,
         description: "Rolled tortillas stuffed with beef and topped with chili sauce.",
@@ -190,7 +190,7 @@ export const food_list = [
     },
     {
         _id: "12",
-        name: "Chicken Fajitas",
+        name: "Fajitas",
         image: food_16,
         price: 10,
         description: "Grilled chicken strips with sautéed peppers and onions.",
@@ -200,7 +200,7 @@ export const food_list = [
     // Italian Foods
     {
         _id: "13",
-        name: "Baked Rigatoni",
+        name: "Rigatoni",
         image: food_17,
         price: 9,
         description: "Pasta baked with tomato sauce, mozzarella, and parmesan.",
@@ -216,7 +216,7 @@ export const food_list = [
     },
     {
         _id: "15",
-        name: "Cannoli Siciliani",
+        name: "Cannoli",
         image: food_19,
         price: 11,
         description: "Crispy pastry tubes filled with sweet ricotta cream.",
@@ -224,7 +224,7 @@ export const food_list = [
     },
     {
         _id: "16",
-        name: "Pizza Margherita",
+        name: "Margherita",
         image: food_20,
         price: 16,
         description: "Classic pizza with tomatoes, mozzarella, and basil.",
@@ -242,7 +242,7 @@ export const food_list = [
     },
     {
         _id: "18",
-        name: "Syrian Shawarma",
+        name: "Shawarma",
         image: food_22,
         price: 9,
         description: "Marinated grilled meat wrapped in pita bread.",
@@ -276,7 +276,7 @@ export const food_list = [
     },
     {
         _id: "22",
-        name: "Potato Fries",
+        name: "Fries",
         image: food_26,
         price: 8,
         description: "Crispy golden potato fries with a side of ketchup.",
@@ -284,7 +284,7 @@ export const food_list = [
     },
     {
         _id: "23",
-        name: "American Pancakes",
+        name: "Pancakes",
         image: food_27,
         price: 14,
         description: "Fluffy pancakes served with syrup and butter.",
@@ -292,7 +292,7 @@ export const food_list = [
     },
     {
         _id: "24",
-        name: "Crispy Fried Chicken",
+        name: "Fried Chicken",
         image: food_28,
         price: 18,
         description: "Deep-fried chicken with a crispy golden crust.",
@@ -310,7 +310,7 @@ export const food_list = [
     },
     {
         _id: "26",
-        name: "Vegetarian Sushi",
+        name: "Veg Sushi",
         image: food_30,
         price: 16,
         description: "Vegetable sushi rolls served with soy sauce.",
@@ -344,7 +344,7 @@ export const food_list = [
     },
     {
         _id: "30",
-        name: "Vegetable Salad",
+        name: "Veg Salad",
         image: food_2,
         price: 9,
         description: "Colorful mix of fresh garden vegetables.",
@@ -352,7 +352,7 @@ export const food_list = [
     },
     {
         _id: "31",
-        name: "Clover Garden Salad",
+        name: "Clover Salad",
         image: food_3,
         price: 11,
         description: "Spring greens with fruits and crunchy nuts.",
@@ -360,7 +360,7 @@ export const food_list = [
     },
     {
         _id: "32",
-        name: "Chicken Caesar Salad",
+        name: "Caesar Salad",
         image: food_4,
         price: 13,
         description: "Romaine lettuce tossed with Caesar dressing and grilled chicken.",

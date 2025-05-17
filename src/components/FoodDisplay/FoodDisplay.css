@@ -8,8 +8,6 @@
 }
 
 .food-display-list{
-    height: 1000px;
-    overflow-y: scroll;
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(216px, 1fr));
     margin-top: 30px;

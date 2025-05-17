@@ -25,7 +25,7 @@ function FoodDisplay({ category }) {
             );
           }
         })}
-      </div><Link to='/all-items'><button className="all-items">See More</button></Link>
+      </div>
     </div>
   );
 }

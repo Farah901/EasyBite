@@ -22,6 +22,7 @@ function App() {
           <Route path="/all-items" element={<AllItems/>} />
         </Routes>
       </div>
+      
       <Footer/>
     </>
   );
