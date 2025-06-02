@@ -30,7 +30,7 @@ function Navbar({ setShowLogin }) {
   }, []);
 
   return (
-    <nav className="navbar navbar-expand-md bg-white shadow-sm px-3 ">
+    <nav className="navbar navbar-expand-md bg-white-sm px-3 ">
       <Link to="/" className="navbar-brand" onClick={() => setMenu("home")}>
         <img src={assets.logo} alt="Logo" className="logo" />
       </Link>
@@ -109,7 +109,7 @@ function Navbar({ setShowLogin }) {
           </div>
 
           {!token ? (
-            <button className="btn btn-outline-danger" onClick={() => setShowLogin(true)}>
+            <button className="btn-sign-up" onClick={() => setShowLogin(true)}>
               Sign in
             </button>
           ) : (
