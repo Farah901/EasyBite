@@ -12,6 +12,7 @@ import Verify from "./pages/Verify/Verify";
 import MyOrders from "./pages/MyOrders/MyOrders";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.bundle.min.js'; 
+import NotFound from "./pages/NotFound/NotFound";
 
 
 function App() {
@@ -29,7 +30,7 @@ function App() {
           <Route path="/delivery" element={<DeliveryJob/>} />
           <Route path="/verify" element={<Verify/>} />
           <Route path="/myorders" element={<MyOrders/>} />
-         
+         <Route path="*" element={<NotFound />} />
         </Routes>
       </div>
       

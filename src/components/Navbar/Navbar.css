@@ -2,7 +2,6 @@
 .navbar {
   padding: 15px 0;
   position: relative;
-  z-index: 10;
 }
 
 .logo {
@@ -110,6 +109,9 @@
 .nav-profile-dropdown img {
   width: 20px;
   height: 20px;
+}
+.btn{
+  width: 80px;
 }
 
 /* Responsive adjustments */
