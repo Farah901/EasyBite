@@ -1,0 +1,146 @@
+.cart {
+  margin: 14px auto;
+  padding: 20px;
+  max-width: 1200px;
+}
+
+.cart-content {
+  display: flex;
+  gap: 50px;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.vertical-separator {
+  width: 3px;
+  border-radius: 6px;
+  background-color:tomato;
+  margin: 0 10px;
+}
+
+
+.cart h2 {
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.cart-items {
+  flex: 2;
+  min-width: 400px;
+  overflow-x: auto;
+  margin-bottom: 40px;
+}
+
+.cart-table {
+  width: 100%;
+  border-collapse: collapse;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.05);
+}
+
+.cart-table th,
+.cart-table td {
+  padding: 12px 16px;
+  text-align: center;
+  border-bottom: 1px solid #eee;
+}
+
+.cart-table th {
+  background-color: #fcf0ea;
+  color: tomato;
+  font-weight: 600;
+}
+
+.ppipi {
+  width: 70px;
+  height: 70px; /* Ajout d'une hauteur fixe */
+  border-radius: 8px;
+  object-fit: cover; /* Garantit que l'image couvre la zone sans déformation */
+  object-position: center; /* Centre l'image */
+  display: block; /* Évite les espaces indésirables */
+}
+
+.cart-table .remove-btn img {
+  width: 24px;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.cart-table .remove-btn img:hover {
+  transform: scale(1.1);
+}
+
+.cart-bottom {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  min-width: 300px;
+}
+
+.cart-total,
+.cart-promocode {
+  flex: 1;
+}
+
+.cart-total-details {
+  display: flex;
+  justify-content: space-between;
+  padding: 8px 0;
+  color: #555;
+}
+
+.cart-total button {
+  margin-top: 20px;
+  border: none;
+  background-color: #1e1b1be3;
+  color: white;
+  padding: 12px;
+  border-radius: 10px;
+  font-weight: 600;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+/* .cart-total button:hover {
+  background-color: #e33e24;
+} */
+
+.cart-promocode p {
+  color: #555;
+   margin-top: 17px;
+}
+
+.cart-promocode-input {
+ 
+  display: flex;
+  gap: 10px;
+}
+
+.cart-promocode-input input {
+  flex: 1;
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  outline: none;
+}
+
+.cart-promocode-input button {
+  padding: 10px 16px;
+  background-color: tomato;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .cart-content {
+    flex-direction: column;
+  }
+
+  .cart-table th,
+  .cart-table td {
+    font-size: 14px;
+    padding: 8px;
+  }
+}

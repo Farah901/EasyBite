@@ -1,0 +1,128 @@
+.place-order {
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+  gap: 50px; /* Espace réduit entre les colonnes */
+  margin-top: 50px;
+  width: 100%;
+  max-width: 1400px; /* Largeur totale augmentée */
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 20px;
+}
+
+/* Style pour la partie formulaire - élargie */
+.place-order-left {
+  width: 65%; /* Le formulaire prend 65% de l'espace */
+  padding: 40px;
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+  border: 1px solid rgba(255, 99, 71, 0.2);
+}
+
+/* Conserve exactement le même style visuel */
+.place-order-left .title {
+  font-size: 30px;
+  font-weight: 600;
+  margin-bottom: 40px;
+  color: tomato;
+  position: relative;
+}
+
+.place-order-left .title::after {
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  left: 0;
+  width: 80px;
+  height: 3px;
+  background: tomato;
+  border-radius: 3px;
+}
+
+.place-order-left input {
+  margin-bottom: 20px;
+  width: 100%;
+  padding: 12px 15px;
+  border-radius: 8px;
+  font-size: 16px;
+  transition: all 0.3s ease;
+  background-color: #f9f9f9;
+  border: 1px solid rgba(255, 99, 71, 0.3);
+}
+
+.place-order-left input:focus {
+  outline: none;
+  border-color: tomato;
+  box-shadow: 0 0 0 3px rgba(225, 80, 55, 0.29);
+  background-color: #fff;
+}
+
+.place-order-left .multi-fields {
+  display: flex;
+  gap: 15px;
+}
+
+
+.place-order-left .multi-fields input {
+  flex: 1;
+}
+
+.place-order-left input[type="email"],
+.place-order-left input[name="phone"] {
+  /* background-color: rgba(255, 99, 71, 0.03); */
+  border: 1px solid rgba(255, 99, 71, 0.3);
+}
+
+.place-order-left input:not(:focus):hover {
+  border-color: #c5c5c5;
+  background-color: #fff;
+}
+
+/* Panier - largeur réduite mais style inchangé */
+.place-order-right {
+  width: 35%; /* Le panier prend 35% de l'espace */
+  /* position: sticky; */
+  top: 20px;
+}
+
+/* Media queries pour le responsive */
+@media (max-width: 1200px) {
+  .place-order {
+    max-width: 100%;
+    padding: 0 40px;
+  }
+}
+
+@media (max-width: 992px) {
+  .place-order {
+    gap: 30px;
+    padding: 0 30px;
+  }
+  
+  .place-order-left {
+    width: 60%;
+  }
+  
+  .place-order-right {
+    width: 40%;
+  }
+}
+
+@media (max-width: 768px) {
+  .place-order {
+    flex-direction: column;
+    gap: 30px;
+    padding: 0 20px;
+  }
+  
+  .place-order-left,
+  .place-order-right {
+    width: 100%;
+  }
+  
+  .place-order-right {
+    position: static;
+  }
+}

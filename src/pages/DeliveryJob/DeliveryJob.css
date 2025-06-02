@@ -1,0 +1,131 @@
+/* DeliveryJob.css */
+
+.delivery-page-container {
+  padding: 2rem;
+  /* background-color: #f9f9f9; */
+}
+
+.delivery-content-container {
+  display: flex;
+  max-width: 1200px;
+  margin: 0 auto;
+  gap: 3rem;
+  align-items: center;
+}
+.form-container {
+  flex: 1;
+  background-color: #fcf0ea;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+}
+.form-container h1 {
+  text-align: center;
+  color: tomato; /* Couleur orange-rouge */
+  font-size: 2.2rem;
+  margin-bottom: 1.5rem;
+  position: relative;
+  padding-bottom: 0.5rem;
+}
+
+.image-container {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.delivery-image {
+  max-width: 100%;
+  height: auto;
+  /* border-radius: 12px; */
+  /* box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); */
+}
+
+.form-row {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.form-group {
+  flex: 1;
+  min-width: 200px;
+  margin-bottom: 1.2rem;
+}
+
+.delivery-container h1 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 1rem;
+}
+
+.delivery-container p {
+  text-align: center;
+  color: #666;
+  margin-bottom: 2rem;
+}
+
+#msg {
+  text-align: center;
+  color: green;
+  font-weight: bold;
+  padding: 6px;
+  display: block;
+  margin-top: 1rem;
+}
+
+label {
+  display: block;
+  margin-bottom: 0.4rem;
+  color: #080707;
+  font-weight: bold;
+}
+
+input[type="text"],
+input[type="tel"],
+select {
+  width: 100%;
+  padding: 0.6rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1rem;
+  transition: border-color 0.3s ease;
+}
+
+input:focus,
+select:focus {
+  border-color: #ed9d1d;
+  outline: none;
+}
+
+button[type="submit"] {
+  background-color: tomato;
+  color: white;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  width: 100%;
+  transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+  background-color: #e63c17;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .delivery-content-container {
+    flex-direction: column;
+  }
+  
+  .image-container {
+    order: -1; /* Met l'image en haut sur mobile */
+    margin-bottom: 2rem;
+  }
+  
+  .delivery-image {
+    max-width: 80%;
+  }
+}
