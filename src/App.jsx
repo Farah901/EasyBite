@@ -13,6 +13,7 @@ import MyOrders from "./pages/MyOrders/MyOrders";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.bundle.min.js'; 
 import NotFound from "./pages/NotFound/NotFound";
+import AboutUs from "./pages/AboutUs/AboutUs";
 
 
 function App() {
@@ -24,6 +25,7 @@ function App() {
         <Navbar setShowLogin={setShowLogin}/>
         <Routes>
           <Route path="/" element={<Home />} />
+          <Route path="/aboutus" element={<AboutUs/>} />
           <Route path="/cart" element={<Cart />} />
           <Route path="/order" element={<PlaceOrder />} />
           <Route path="/all-items" element={<AllItems/>} />

@@ -29,12 +29,6 @@ const Verify = () => {
         verifyPayment();
     },[])
 
-
-
-
-
-
-
   return (
     <div className='verify'>
        <div className="spinner"></div>

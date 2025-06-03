@@ -78,13 +78,15 @@ function Navbar({ setShowLogin }) {
             </Link>
           </li>
           <li className="nav-item">
-            <a
-              href="#footer"
-              className={`nav-link ${menu === "about" ? "active" : ""}`}
-              onClick={() => setMenu("about")}
+            <Link
+              to="/aboutus"
+              onClick={() => {
+                setMenu("aboutus");
+              }}
+              className={menu === "aboutus" ? "active" : ""}
             >
-              About Us
-            </a>
+              About us
+            </Link>
           </li>
           <li className="nav-item">
             <a
@@ -118,7 +120,11 @@ function Navbar({ setShowLogin }) {
               onClick={() => setDropdownOpen((prev) => !prev)}
               ref={dropdownRef}
             >
-              <img src={assets.profile_icon} className="profil-icon" alt="Profile" />
+              <img
+                src={assets.profile_icon}
+                className="profil-icon"
+                alt="Profile"
+              />
               {isDropdownOpen && (
                 <ul className="nav-profile-dropdown">
                   <li onClick={() => navigate("/myorders")}>
