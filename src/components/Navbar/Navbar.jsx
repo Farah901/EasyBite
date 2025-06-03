@@ -83,7 +83,7 @@ function Navbar({ setShowLogin }) {
               onClick={() => {
                 setMenu("aboutus");
               }}
-              className={menu === "aboutus" ? "active" : ""}
+              className={`nav-link ${menu === "aboutus" ? "active" : ""}`}
             >
               About us
             </Link>
